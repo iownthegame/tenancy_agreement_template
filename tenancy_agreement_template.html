@@ -1,0 +1,262 @@
+<!-- example.html -->
+<!DOCTYPE html>
+<html>
+  <head><title>Tenancy Agreement</title>
+  <style>
+    body {
+      font-family: 'Cambria', Times, serif;
+      /*margin: 50px; */
+    }
+    .label-row {
+      display: flex;
+      max-width: 450px;
+      margin-bottom: 4px;
+      /* first span */
+      span:first-child {
+        width: 200px;
+      }
+      /* second span */
+      span:last-child {
+        text-align: left;
+        width: 100%;
+      }
+    }
+    .under-line {
+      display: inline-block;
+      border-bottom: 1.5px solid #333;
+      vertical-align: bottom;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    .under-line-blank {
+      display: inline-block;
+      border-bottom: 1.5px solid #333;
+      width: 200px;
+      vertical-align: bottom;
+    }
+    .block {
+      margin-bottom: 30px;
+    }
+    .article-list > li {
+        margin-top: 8px;
+    }
+    #title {
+      text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+    <h2 id="title"></h1>
+
+    <div class="block">
+        <h5>The undersigned;</h5>
+
+        <div class="label-row"><span>name of landlord</span><span class="under-line" id="landlord-name"></span></div>
+        <div class="label-row"><span>address</span><span class="under-line" id="landlord-address"></span></div>
+        <div class="label-row"><span>place of residence</span><span class="under-line" id="landlord-place-of-residence"></span></div>
+        <h5><i>and</i></h5>
+        <div class="label-row"><span>name of tenant</span><span class="under-line" id="tenant-name"></span></div>
+
+        <h5>agree on the following:</h5>
+    </div>
+
+    <div class="block">
+        <h4>The living space</h4>
+        <h3>Article 1</h3>
+        <ol class="article-list">
+            <li>
+                The landlord rents, with effect from <span class="under-line" id="effect-date"></span> (day-month-year) the room in the house to <span class="under-line" id="tenant-name-2"></span> at <span class="under-line" id="landlord-address-2"></span>.
+                This room is located on the <span class="under-line" id="floor"></span> floor at the <span class="under-line" id="direction"></span> of the house. Area of the room: <span class="under-line" id="room-size"></span>.
+            </li>
+            <li>This room is used as living space for a maximum of <span class="under-line" id="max-person"></span> person. If use by multiple persons is permitted, the person who shares a household with the tenant and has his/her main residence in the rented property is considered a co-tenant.</li>
+            <li>The landlord grants:</li>
+                <ul>
+                    <li><b>shared use</b> of kitchen</li>
+                    <li><b>shared use</b> of shower</li>
+                    <li><b>shared use</b> of toilet</li>
+                    <li><b>shared use</b> of balcony</li>
+                    <li><b>shared use</b> of living room</li>
+                    <li><b>shared use</b> of wardrobe room</li>
+                    <li><b>shared use</b> of storage</li>
+                </ul>
+            </li>
+            <li>The landlord is the owner of the property.</li>
+            <li>Tenant and landlord shall jointly establish a record of the lease at the start of the agreement, including a precise description of the state of maintenance of the rented property. Both shall receive a dated and signed copy.</li>
+        </ol>
+    </div>
+
+    <div class="block">
+        <h4>The duration of the agreement</h4>
+        <h3>Article 2</h3>
+        <p>The rental agreement has been entered into for an indefinite period.</p>
+    </div>
+
+    <div class="block">
+        <h4>The rental price and other costs</h4>
+        <h3>Article 3</h3>
+        <p>The rental price at the start of the rental agreement is <span class="under-line" id="rental"></span> per month.</p>
+
+        <h3>Article 4</h3>
+        <ol>
+            <li>No additional payment for supplies and services is required from the tenant. All such costs are included in the rent.</li>
+            <li>The following supplies and services are provided:
+                <ul>
+                    <li>electricity</li>
+                    <li>water</li>
+                    <li>warm water</li>
+                    <li>heating</li>
+                    <li>internet</li>
+                    <li>use of washing machine and dryer</li>
+                    <li>use of all kitchenware and appliances</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="block">
+        <h3>Article 5</h3>
+        <p>The advance payments are settled at least once a year on the basis of a specified written statement of the additional costs, drawn up by the landlord. The landlord will repay any surplus within one month; any deficits must be paid by the tenant within one month. A service costs accounting year is equal to a calendar year.</p>
+        <p>The settlement must take place within six months after the end of the calendar year to which the settlement relates. The advance amount can only be adjusted once per year, after settlement of the previous period.</p>
+    </div>
+    <div class="block">
+        <h3>Article 6</h3>
+        <p>The rent is paid monthly before the fifth of the month in question. Advance payments for additional supplies and services are paid at the same time as the rent.</p>
+    </div>
+    <div class="block">
+        <h4>The maintenance obligations</h4>
+        <h3>Article 7</h3>
+        <ol>
+            <li>The landlord will, at the request of the tenant, repair defects only.</li>
+            <li>The lessor is liable for any damage caused by these defects.</li>
+            <li>The lessor will carry out all necessary maintenance during the rental period, unless such maintenance is the tenant's responsibility under this agreement.</li>
+        </ol>
+        <h3>Article 8</h3>
+        <p>The following maintenance obligations with regard to the room are the responsibility of the tenant, unless the maintenance is necessary as a result of normal wear and tear or the actions or omissions of the landlord:</p>
+        <ul>
+            <li>whitewashing, painting, wallpapering and painting for the duration of the home;</li>
+            <li>the daily maintenance and minor repairs to locks and fittings and small electrical installations such as switches, lamps and wall sockets (sockets);</li>
+            <li>the maintenance of the water taps and the provision of facilities to or as a result of frozen water pipes;</li>
+            <li>replacing broken windows, unless otherwise stated human costs are involved;</li>
+            <li>cleaning and unblocking drains, gutters and sinks, insofar as these are accessible to the tenant;</li>
+            <li>sweeping chimneys at least once a year, for example whether these are accessible to the tenant;</li>
+            <li>all other repair work that is the result of gross negligence, carelessness, neglect or rough occupation by the tenant.</li>
+        </ul>
+        <h3>Article 9</h3>
+        <p>The tenant is obliged to compensate or repair the damage he has caused. The tenant is also liable for damage caused by a person who uses or visits the rented property with his permission.</p>
+    </div>
+    <div class="block">
+        <h4>Changes during the rental period</h4>
+        <h3>Article 10</h3>
+        <ol>
+            <li>The tenant is completely free to make changes and additions to the room, which can be undone without significant costs.</li>
+            <li>If the tenant wants to make major changes to the room, he must first ask the landlord for permission.</li>
+            <li>The landlord gives written permission if the intended change does not affect the rentability of the room.</li>
+            <li>The landlord may not make his consent subject to the condition that the changes are undone when the tenant moves out.</li>
+            <li>The landlord may attach a limited number of conditions to his consent, which relate to:
+                <ul>
+                    <li>preventing damage to the structure of the room or the pledge;</li>
+                    <li>government (construction) regulations;</li>
+                    <li>the maintenance of the change;</li>
+                    <li>additional facilities to prevent inconvenience to third parties;</li>
+                    <li>insurance, tax and liability.</li>
+                </ul>
+            </li>
+            <li>Prior to the work, the tenant and landlord will agree in writing whether compensation will be provided and how this will be calculated on the basis of a compensation scheme.</li>
+        </ol>
+    </div>
+    <div class="block">
+        <h4>Other rights and obligations</h4>
+        <h3>Article 11</h3>
+        <p>The landlord is obliged to make the rented property available to the tenant in a clean condition on the agreed starting date and to hand over the keys to the tenant.</p>
+        <h3>Article 12</h3>
+        <p>The tenant undertakes not to cause any inconvenience or nuisance to the landlord, fellow residents or neighbours.</p>
+        <h3>Article 13</h3>
+        <ol>
+            <li>The landlord undertakes not to cause any inconvenience or nuisance to the tenant.</li>
+            <li>Landlord will respect tenant's privacy and only enter the rented space after appointment with tenant. Tenant has the right to lock the room(s).</li>
+        </ol>
+        <h3>Article 14</h3>
+        <p>The landlord will ensure that the facilities belonging to the rented property can be used by the tenant day and night.</p>
+        <h3>Article 15</h3>
+        <p>The tenant has the right to receive visitors in the rented property and to have them stay overnight. However, this may not have the character of permanent co-occupation, unless article 1 permits occupancy by more than one person.</p>
+    </div>
+    <div class="block">
+        <h3>Article 16</h3>
+        <p>The tenant undertakes to register with the Municipal Basic Administration (formerly the Population Register) in the place where the rented property is located.</p>
+    </div>
+    <div class="block">
+        <h4>The end of the lease agreement</h4>
+        <h3>Article 17</h3>
+        <p>If the rented property is part of a home in which the landlord has his main residence, the landlord can terminate this agreement without giving reasons in the first nine months after entering into this agreement. In that case, the rental agreement ends without judicial intervention. The three-month notice period applicable to the landlord remains applicable. The termination must be made in writing and by registered mail.</p>
+        <h3>Article 18</h3>
+        <p>The notice period for the landlord is three months and is extended by one month for each year that the tenant has rented continuously, up to a maximum of six months.</p>
+        <h3>Article 19</h3>
+        <p>Tenant may terminate the agreement on any day of the month, observing a notice period of one month. Termination by tenant terminates the lease agreement.</p>
+        <h3>Article 20</h3>
+        <p>The rental agreement can be terminated at any time after the lease has commenced by mutual consent of the tenant and landlord.</p>
+    </div>
+    <div class="block">
+        <h4>Delivery of the room at the end of the lease</h4>
+        <h3>Article 21</h3>
+        <ol>
+            <li>As soon as possible after termination of the lease, the room will be inspected by the tenant and the landlord together, at the initiative of the landlord. The condition of the room will be recorded in a written report. The landlord and the tenant will both receive a copy of this, dated and signed by the parties. The report describes the repair work to be paid for by the tenant. No other repair work will be
+                <br>Any repairs not described in the report may be charged by the landlord, unless the repairs only became necessary after the report was drawn up.
+            </li>
+            <li>Tenant shall return the room clean and in a similar state of repair (except for normal wear and tear) as at the start of the lease. Changes in and to the room for which permission has been granted or for which no permission is required, tenant does not have to undo.</li>
+            <li>If no inventory report as referred to in Article 1, paragraph 5, has been drawn up at the start of the lease, the landlord must, if there is a dispute about this, prove that the room was in a better condition at the start of the lease than at the end of the lease.</li>
+            <li>After the report referred to in the first paragraph has been drawn up, the tenant will be given until the end of the rental period to carry out the repair work for which he is responsible. If the period between the moment the report is drawn up and the moment the rental agreement ends is less than two weeks, the tenant will still be given until two weeks after the report has been drawn up to carry out the repair work required for this, without being liable for any compensation.</li>
+            <li>The landlord will then hold a final inspection, for which the tenant will be invited in good time to determine whether the tenant has fulfilled his delivery obligation. A report will also be drawn up of this final inspection. If necessary, the tenant will be given two working days after the final inspection to repair any defects found during the final inspection, without being liable for compensation.</li>
+        </ol>
+    </div>
+    <div class="block">
+        <h4>Final provision</h4>
+        <h3>Article 22</h3>
+        <p>
+            The landlord and tenant will each receive a copy of this agreement.<br/>Thus drawn up in <span class="under-line" id="copies"></span> copies at <span class="under-line" id="sign-place"></span> on <span class="under-line" id="sign-date"></span> (day-month-year).
+        </p>
+        <p>
+            <p>Signature of landlord:</p>
+            <br/>
+            <p><span class="under-line-blank"></span></p>
+            <br/><br/>
+            <p>Signature of tenant:</p>
+            <br/>
+            <p><span class="under-line-blank"></span></p>
+        </p>
+    </div>
+
+    <script>
+        const address = '123 Maple Avenue, 4B, 56789 Rotterdam';
+        const tenantName = 'Alexandra Smith';
+        const landlordName = 'John van Dijk';
+        const landlordPlaceOfResidence = 'Rotterdam, The Netherlands';
+        const signPlace = 'Rotterdam, The Netherlands';
+        const effectDate = '15-10-2024';
+        const roomSize = '12 m²';
+        const floor = 'third';
+        const direction = 'back';
+        const maxPerson = '2';
+        const rental = '€ 950';
+        const signDate = '10-10-2024';
+        const copies = '2';
+        const title = 'Tenancy Agreement (DRAFT)';
+
+        document.getElementById('title').textContent = title;
+        document.getElementById('landlord-name').textContent = landlordName;
+        document.getElementById('landlord-address').textContent = address;
+        document.getElementById('landlord-address-2').textContent = address;
+        document.getElementById('landlord-place-of-residence').textContent = landlorfPlaceOfResidence;
+        document.getElementById('tenant-name').textContent = tenantName;
+        document.getElementById('tenant-name-2').textContent = tenantName;
+        document.getElementById('effect-date').textContent = effectDate;
+        document.getElementById('room-size').textContent = roomSize;
+        document.getElementById('floor').textContent = floor;
+        document.getElementById('direction').textContent = direction
+        document.getElementById('max-person').textContent = maxPerson;
+        document.getElementById('rental').textContent = rental;
+        document.getElementById('sign-date').textContent = signDate;
+        document.getElementById('copies').textContent = copies;
+        document.getElementById('sign-place').textContent = signPlace;
+    </script>
+    </body>
+</html>
