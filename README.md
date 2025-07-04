@@ -20,4 +20,4 @@ Rental contract source: [!WOON](https://www.wooninfo.nl/vraagbaak/huurprijs/voor
 ```
 
 ### Output
-Checkout tenancy_agreement.pdf
+Checkout [tenancy_agreement.pdf](tenancy_agreement.pdf)
